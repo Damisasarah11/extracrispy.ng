@@ -1,0 +1,912 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tasty Crust</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cdb5911398.js" crossorigin="anonymous"></script>
+   <link href="./style.css" rel="stylesheet" >
+  </head>
+  <body> 
+  
+   <!-----Navbar------->
+  <nav class="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./assect/crispy logo.png" alt="Crispy Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu1">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reservation">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#post">Post</a>
+          </li>
+        </ul>
+        <a href="./order.html" class="btn">Order Now</a>
+      </div>
+    </div>
+  </nav>
+
+
+<!---hero section---->
+<div id="home">
+ <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item text-center vh-100 active slide-1" id="bg-cover">
+      <div class="container" id="carousel">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h6 class="text-white">Welcome to Extra crispy</h6>
+            <h1 class="display-1 text-white fw-bold">Home Of Tasty Dishes</h1>
+            <a href="#reservation" class="btn btn-brand">Reservation</a>
+          </div>
+        </div>
+      </div>
+    </div>   
+
+    <div class="carousel-item text-center vh-100 active slide-2 " id="bg-cover">
+      <div class="container " id="carousel">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h6 class="text-white">Welcome to Extra Crispy</h6>
+            <h1 class="display-1 text-white fw-bold">Dishes That Gladens The Heart</h1>
+            <a href="#reservation" class="btn btn-brand">Reservation</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+
+
+<!-----About section----->
+<section class="about" id="about">
+  <div class="container" >
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="./assect/unsplash1.jpg" id="img">
+      </div>
+      <div class="col-lg-5">
+        <h1 class="my-4">About us</h1>
+        <div class="divider my-4"></div>
+        <p>Savoring the flavors of Nigeria and beyond, our resturant brings together traditional and modern cuisine in the heart of Abuja. Fresh, locally sourced ingridients and love goes into every plate, making each meal a taste of warmth and hospitality.</p>
+        <p></p>
+        <a href="#menu1" class="btn btn-brand">explore menu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------Menu------>
+<section id="menu1" class="bg-light">  <div class="container">
+    <div class="row ">
+      <div class="col-lg-12 menutext mt-0">
+         <h1>Our Menu</h1>
+      <p>We belive that food is more than just sustenance - it is a way to connect with others, to share stories, and to create memories. that is why we've carefully curated our menu to include a range of options, from traditional favourites to modern surprises.</p>
+      </div>
+    </div>
+  </div>
+
+  
+    <div class="container mt-5 ">
+
+         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" id="menuul">
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All Dishes</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-breakfast-tab" data-bs-toggle="pill" data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-breakfast" aria-selected="false">Breakfast</button>
+            </li>
+
+             <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-Lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-Lunch" type="button" role="tab" aria-controls="pills-Lunch" aria-selected="false">Lunch</button>
+            </li>
+
+             <li class="nav-item" role="presentation">
+                <button class="nav-link dinner-pill" id="pills-Dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-Dinner" type="button" role="tab" aria-controls="pills-Dinner" aria-selected="false">Dinner</button>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-5" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+               
+                <div class="row ">
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                    <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/breakfast 4.jpg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Dark pancakes </h4>
+                        <p class="small">Buttery sweeet chocolate pancakes, served with melted chocolate and straberries</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/lunch 2.jpg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Smoky Jollof Rice</h4>
+                        <p class="small">A classic western african dish, with a deep smoky flavor from slow cooked spices</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/dinner 1.webp" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Grilled Salmon</h4>
+                        <p class="small">Savor the flavor of our freshly grilled salmon, infused with citrus and spices and served with love</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/lunch 3.jpeg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2"> Rice Dish</h4>
+                        <p class="small">Enjoy the flavourful taste of our mouth watering rice dish, served with sauce, chicken and vegetable</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/dinner 5.jpg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Beans pudding</h4>
+                        <p class="small">Made with the finest ingridients, our beans pudding is rich in flavour and has a protein filling</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/breakfast 6.jpeg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Star Pancakes</h4>
+                        <p class="small">Our star pancake is packed with a lot of goodies and sides like bacon and eggs. veary delicious</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/lunch 5.jpeg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mt-2">Greek God Burger</h4>
+                        <p class="small">Juicy beef patty, melted cheedar cheese, lettuce, tomato, fries and our signature sauce</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/dinner.jpeg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Couscous </h4>
+                        <p class="small">Couscous with spiced lamb, roasted vegetables, and a drizzle of harissa. perfect for every season</p>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-breakfast" role="tabpanel" aria-labelledby="pills-breakfast-tab">
+                <div class="row">
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/breakfast 4.jpg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Dark Pancakes</h4>
+                        <p class="small">Buttery sweeet chocolate pancakes, served with melted chocolate and straberries</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/breakfast 6.jpeg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Star Pancakes</h4>
+                        <p class="small">Our star pancake is packed with a lot of goodies and sides like bacon and eggs. veary delicious</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/dinner 5.jpg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Beans Pudding</h4>
+                        <p class="small">Made with the finest ingridients, our beans pudding is rich in flavour and has a protein filling.</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/dinner.jpeg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Couscous</h4>
+                        <p class="small">Couscous with spiced lamb, roasted vegetables, and a drizzle of harissa. perfect for every season.</p>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-Lunch" role="tabpanel" aria-labelledby="pills-Lunch-tab">
+               
+                <div class="row">
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/lunch 2.jpg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Smoky Jollof</h4>
+                        <p class="small">A classic western african dish, with a deep smoky flavor from slow cooked spices</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/lunch 4.jpeg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Plantains</h4>
+                        <p class="small">A sweet and Savory nigerian combination. prepared with the best of ingridients and servrd with love.</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/lunch 3.jpeg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2"> Rice Dish</h4>
+                        <p class="small">Enjoy the flavourful taste of our mouth watering rice dish, served with sauce, chicken and vegetable</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/lunch 5.jpeg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Greek God Burger</h4>
+                        <p class="small">Juicy beef patty, melted cheedar cheese, lettuce, tomato, fries and our signature sauce.</p>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade " id="pills-Dinner" role="tabpanel" aria-labelledby="pills-Dinner-tab">
+                <div class="row">
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/dinner 1.webp" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Grilled Salmon</h4>
+                        <p class="small">Savor the flavor of our freshly grilled salmon, infused with citrus and spices and served with love</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/dinner 4.jpeg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">veggie rice</h4>
+                        <p class="small">A very creamy vegetable sauce is prepared with the finest of ingridients. this is a traditional dish.</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/dinner 5.jpg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2">Beans Pudding</h4>
+                        <p class="small">Made with the finest ingridients, our beans pudding is rich in flavour and has a protein filling.</p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./assect/lunch 3.jpeg" class="img-fluid" alt="Image 1">
+                      <div class="menu-item-icons p-4">
+                        <div>
+                          <span>Rated (5.4)</span>
+                          <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          </span>
+                        </div> 
+                        <h4 class="mt-1 mb-2"> Rice Dish</h4>
+                        <p class="small">Enjoy the flavourful taste of our mouth watering rice dish, served with sauce, chicken and vegetable</p></p>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-----Reviews-->
+<section id="reviews" class="bg-cover">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 intro-text mb-4">
+        <h1 class="text-white">Reviews</h1>
+        <p class="text-white">We're proud of the experiences we've created for our guests. Read their honest reviews and see what they loved about their time with us.</p>
+      </div>
+    </div>
+
+     <div id="carouselExampleFade" class="carousel slide carousel-fade">
+   <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="reviews bg-white p-5 text-center">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="mb-0">The smoky Jollof was delicious! The smoky flavor was perfectly balanced with the spices, and the rice was cooked to perfection. I highly Recommend for anyone looking for a flavorful twist.</p>
+            <div class="person mt-4 px-5">
+              <img src="./assect/lunch 2.jpg" class="img-fluid">
+              <h4 class="mb-0 mt-2">Mary Steve</h4>   
+              <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="reviews bg-white p-5 text-center">
+           <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div> 
+           <p class="mb-0">Loved the couscous Delight! the flavors were so fresh and vibrant, and the portion was generous. The herbs and cherry tomatoes added a nice pop of color and taste. Highly recommend!</p>
+            <div class="person mt-4 px-5">
+              <img src="./assect/dinner.jpeg" class="img-fluid" >
+              <h4 class="mb-0 mt-2">John Dan</h4>   
+              <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+   </div>
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+   </button>
+   </div>
+
+  </div>
+</section>
+<!-------reservation--------->
+<section id="reservation">
+  <div class="container">
+    <div class="row">
+     <div class="col-12 intro-text mb-4">
+        <h1 class="text-center">Book your table</h1>
+        <p class="text-center">Book a memorable dining experience with us. Secure your spot and enjoy our hospitality. We look forward to serving you, we ensure a memorable dining experience.</p>
+      </div>
+    </div>
+    <form class="row justify-content-center" >
+      <div class="col-lg-8">
+        <div class="row g-3">
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" placeholder="full name" >
+          </div> 
+          <div class="form-group col-md-6">
+            <input type="email" class="form-control" placeholder="email adresss" required >
+          </div> 
+           <div class="form-group col-md-6">
+            <input type="text" class="form-control" placeholder="date" >
+          </div> 
+           <div class="form-group col-md-6">
+            <input type="text" class="form-control" placeholder="time">
+          </div> 
+           <div class="form-group col-md-12">
+            <textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="message"></textarea>
+          </div> 
+           <div class="form-group text-center col-md-12">
+           <button type="submit"  class="btn btn-brand">send message</button>
+          </div> 
+        </div>
+
+      </div>
+    </form>
+  </div>
+ </section> 
+
+
+<!-------featurs--------->
+<section id="features" class="bg-cover">
+  <div class="container mb-3">
+    <div class="row">
+      <div class="col-12 intro-text mb-4">
+        <h1 class="text-white">Why choose us</h1>
+        <p class="text-white">Apart from being the best at what we do, there are other various reasons why you should allow us take care of your next dining experience.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 mb-3">
+          <div class="feature p-4 text-center">
+            <div class="feature-icon">
+              <i class="fa-solid fa-wifi"></i>
+            </div>
+             <h1 class="text-white mt-4">Surf for free</h1>
+             <p class="text-white">Stay connected while you dine with us! Enjoy complimentary Wifi and make the most of your meals all hour, all day,  everyday. </p>
+          </div>
+        </div>
+
+         <div class="col-lg-3 col-sm-6 mb-3">
+          <div class="feature p-4 text-center">
+            <div class="feature-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+             <h1 class="text-white mt-4 mb-2">Fast delivery</h1>
+             <p class="text-white ">Get your favorite dishes delivered quickly and efficiently. Order now and enjoy fast delivery, quick and reliable 24/7.</p>
+          </div>
+        </div>
+
+         <div class="col-lg-3 col-sm-6 mb-3">
+          <div class="feature p-4 text-center">
+            <div class="feature-icon">
+              <i class="fa-solid fa-circle-user"></i>
+            </div>
+             <h1 class="text-white mt-4 mb-2">Friendly staff</h1>
+             <p class="text-white">Our staff are dedicated to providing warm and welcoming service. come and taste the friendly difference and more.</p>
+          </div>
+        </div>
+
+         <div class="col-lg-3 col-sm-6 mb-3">
+          <div class="feature p-4 text-center">
+            <div class="feature-icon">
+              <i class="fa-solid fa-star"></i>
+            </div>
+             <h1 class="text-white mt-4 mb-2">Highly rated</h1>
+             <p class="text-white">Join the many satisfiend customers who have rave reviews! we are proud of our reputation for quality and service.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------blog post----->
+  <section id="post">
+    <div class="container ">
+      <div class="row">
+        <div class="col-12 intro-text mb-4 text-center">
+       <h1 class="">Blog post</h1>
+         <p class="">Stay up to date with the latest happenings at extra crispy. and get insider acess to our kitchen menu and more. join us on a culinary journey as we explore the flavors ingridients and experiences that makes us stand out.</p>
+     </div>   
+      </div>
+
+      <div class=" my-2">
+        <div class="row bg-white card-container p-5">
+            <div class="col-sm-6 mb-0 mb-sm-0">
+                <img src="./assect/breakfast 4.jpg" class="img-fluid" alt="Blog Image">
+            </div>
+            <div class="col-sm-6 d-flex flex-column justify-content-center">
+                <p>posted: 22 june, 2025</p>
+                <h4><a href="#">How to make chocolate pancakes</a></h4>
+                <p>Chocolate pancakes are easy and delicious to prepare, they are go to on a lazy day. here's a simple recipe:</p>
+                <a href="#">Read more...</a>
+            </div>
+        </div>
+
+         <div class="row bg-white card-container p-5">
+            <div class="col-sm-6 mb-0 mb-sm-0">
+                <img src="assect/lunch 2.jpg"  class="img-fluid" alt="Blog Image">
+            </div>
+            <div class="col-sm-6 d-flex flex-column justify-content-center">
+                <p>posted: 7 august, 2025</p>
+                <h4><a href="#">#1 Best smoky jollof</a></h4>
+                <p>Smoky jellof rice is a popular west african dish, particularly in Nigeria. It is known for its rich, smoky flavor</p>
+                <a href="#">Read more...</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!------insta post----->
+    <section>
+    <div class="row g-0">
+    <div class="col-lg-3 col-sm-6">
+      <div class="insta-post">
+        <img src="./assect/dinner 1.webp" alt="" class="img-fluid">
+        <a href="#" class="insta-btn">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="insta-post">
+        <img src="./assect/lunch 2.jpg" alt="" class="img-fluid">
+        <a href="#" class="insta-btn">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="insta-post">
+        <img src="./assect/breakfast 6.jpeg" alt="" class="img-fluid">
+        <a href="#" class="insta-btn">
+         <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="insta-post">
+        <img src="./assect/dinner 5.jpg" alt="" class="img-fluid">
+        <a href="#" class="insta-btn">
+           <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  </section>
+ </section>
+
+
+ <!----footer---->
+<footer class="bg-cover" >
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-4">
+          <p >Gratitude and good food, everyday. Thank you for choosing us and staying loyal.</p>
+          <div class="footer-icon">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 ms-auto">
+          <h6 class="mb-4" id="footer-head">CONTACT</h6>
+          <p class="mb-1">09073753597</p>
+          <p>damisasarah2@gmail.com</p>
+          <p class="mb-0">opposite lafia city mall, lafia. Nasarawa state.</p>
+        </div>
+
+        <div class="col-lg-3">
+          <h6 class="mb-4" id="footer-head">OPENING HOURS</h6>
+          <p class="mb-1">Monday-Friday : 08:00 - 22:00</p>
+          <p>Monday-Friday : 08:00 - 22:00</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom mt-3">
+      <div class="container">
+      <div class="row gy-3 justify-content-between ">
+        <div class="col-auto">
+          <p class="mb-0">all right reserved</p>
+        </div>
+      </div>
+      </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggler = document.querySelector('.navbar-toggler');
+      const collapse = document.querySelector('#navbarNav');
+      const togglerIcon = toggler?.querySelector('.navbar-toggler-icon');
+      const xmarkIcon = toggler?.querySelector('.fa-xmark');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      // Check if elements exist
+      if (!toggler || !collapse || !togglerIcon || !xmarkIcon) {
+        console.error('Missing elements:', { toggler, collapse, togglerIcon, xmarkIcon });
+        return;
+      }
+
+      // Toggle icons with collapse events
+      collapse.addEventListener('show.bs.collapse', () => {
+        console.log('Menu opening');
+        togglerIcon.style.display = 'none';
+        xmarkIcon.style.display = 'inline-block';
+      });
+
+      collapse.addEventListener('hide.bs.collapse', () => {
+        console.log('Menu closing');
+        togglerIcon.style.display = 'inline-block';
+        xmarkIcon.style.display = 'none';
+      });
+
+      // Close navbar and scroll to section on nav link click
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault(); // Prevent default anchor behavior
+          const targetId = link.getAttribute('href'); // Get the href (e.g., #home)
+          const targetSection = document.querySelector(targetId); // Find the target section
+
+          if (targetSection) {
+            // Calculate offset to account for sticky navbar height
+            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+            const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+
+            // Smoothly scroll to the section
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+
+            // Close the navbar if it's open (for mobile)
+            if (collapse.classList.contains('show')) {
+              bootstrap.Collapse.getInstance(collapse).hide(); // Use Bootstrap's Collapse API to close
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+ 
